@@ -1,0 +1,8 @@
+# Netlify builds the single-file version of the game on every push.
+# Set the five NEXT_PUBLIC_FIREBASE_* variables under Site configuration → Environment variables.
+[build]
+  command = "npm run build:site"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
